@@ -3,21 +3,65 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SV DRIVE · Titan Software Enterprise</title>
-    <meta name="description" content="SV DRIVE. ¿Conoces las reglas? Trivia de tránsito de El Salvador. Políticas y soporte." />
+    <title>SV DRIVE · ¿Pasarías hoy el examen de manejo?</title>
+    <meta name="description" content="Practicá el examen teórico de manejo de El Salvador con la ley vigente. Probá el test gratis, sin instalar nada." />
+    <meta property="og:title" content="¿Pasarías hoy el examen de manejo?" />
+    <meta property="og:description" content="10 preguntas del examen teórico de El Salvador. Gratis y sin instalar nada." />
+    <meta property="og:image" content="https://gamesvdrive.titancloud-enterprise.com/test/og.png" />
+    <meta name="theme-color" content="#16181B" />
     <link rel="icon" href="/icon-512.png" />
     <link rel="stylesheet" href="/styles.css" />
+    <style>
+        .hero { color: #F1F0EA; padding: 8px 0 24px; }
+        .sign { display: block; width: 100%; max-width: 340px; margin: 8px auto 28px; }
+        .hero h1 { font-size: clamp(34px, 8vw, 52px); line-height: 1.03; margin: 0 0 14px; font-weight: 900; letter-spacing: -0.01em; }
+        .hero p { color: #B5B8BD; font-size: 18px; margin: 0 0 22px; }
+        .lane { height: 5px; margin: 26px 0; background: repeating-linear-gradient(90deg, #F4C21B 0 24px, transparent 24px 40px); }
+        .cta { display: block; text-align: center; background: #F4C21B; color: #16181B; font-weight: 900; letter-spacing: .06em;
+               text-transform: uppercase; text-decoration: none; padding: 18px; border-radius: 8px; font-size: 18px;
+               box-shadow: inset 0 -4px 0 rgba(0,0,0,.18); }
+        .stores { display: flex; gap: 10px; margin-top: 12px; }
+        .stores a { flex: 1; text-align: center; color: #F1F0EA; border: 1px solid #3A3D42; border-radius: 8px; padding: 14px 8px;
+                    text-decoration: none; font-weight: 700; font-size: 15px; }
+        .facts { color: #F1F0EA; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0; padding: 0; list-style: none; }
+        .facts b { display: block; font-size: 28px; font-weight: 900; }
+        .facts span { color: #9CA0A6; font-size: 13px; }
+    </style>
 </head>
 <body>
     <div class="wrap">
-        <header class="brand">
-            <img src="/icon-512.png" alt="SV DRIVE" />
-            <h1 style="color:#F6E3B0">SV DRIVE</h1>
-            <p>¿Conoces las reglas?</p>
-        </header>
+        <svg class="sign" viewBox="0 0 320 104" role="img" aria-label="SV DRIVE · Examen teórico">
+            <rect x="2" y="2" width="316" height="100" rx="9" fill="#00704A" />
+            <rect x="8" y="8" width="304" height="88" rx="5" fill="none" stroke="#fff" stroke-width="3" />
+            <g transform="translate(22 20)">
+                <path d="M0 0 H38 V22 C38 33 28 38 19 42 C10 38 0 33 0 22 Z" fill="#fff" />
+                <path d="M3.5 3.5 H34.5 V21.5 C34.5 30 26 34.5 19 37.5 C12 34.5 3.5 30 3.5 21.5 Z" fill="#19409C" />
+                <text x="19" y="25" text-anchor="middle" fill="#fff" font-family="Overpass, system-ui, sans-serif" font-weight="800" font-size="12">CA-1</text>
+            </g>
+            <text x="76" y="52" fill="#fff" font-family="Overpass, system-ui, sans-serif" font-weight="800" font-size="36">SV DRIVE</text>
+            <text x="78" y="82" fill="#fff" font-family="Overpass, system-ui, sans-serif" font-weight="600" font-size="17">Examen teórico</text>
+            <path d="M282 80 L282 58 M282 58 L272 68 M282 58 L292 68" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+
+        <section class="hero">
+            <h1>¿Pasarías hoy el examen de manejo?</h1>
+            <p>Practicá el examen teórico de El Salvador con preguntas de la vida real y la ley vigente. Cada respuesta trae el artículo.</p>
+            <a class="cta" href="/test/?utm_source=sitio">Hacer el test gratis</a>
+            <div class="stores">
+                <a href="https://apps.apple.com/app/id6809071212">App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.kelvinsde.rutasegura">Google Play</a>
+            </div>
+            <div class="lane"></div>
+            <ul class="facts">
+                <li><b>10</b><span>preguntas en el simulacro</span></li>
+                <li><b>159</b><span>señales oficiales COPACA</span></li>
+                <li><b>80 %</b><span>para aprobar</span></li>
+            </ul>
+        </section>
+
         <main class="card">
-            <p>Juego de trivia sobre la Ley de Transporte Terrestre, Tránsito y Seguridad Vial de El Salvador y sus reformas.</p>
-            <p class="muted">Hecho por Titan Software Enterprise. No es una app oficial del VMT ni de la PNC.</p>
+            <p>SV DRIVE te dice cuánto te falta para pasar el examen teórico, tema por tema: señales, multas, reglas de la calle, papeles, seguridad y transporte.</p>
+            <p class="muted">Hecho en El Salvador por Titan Software Enterprise. No es una app oficial del VMT ni de la PNC. La ley publicada manda si hay diferencia con una pregunta.</p>
             <p class="nav">
                 <a href="/privacidad/">Aviso de privacidad</a>
                 <a href="/arco/">ARCO-POL</a>
